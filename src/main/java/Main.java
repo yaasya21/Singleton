@@ -13,6 +13,7 @@ public class Main {
             registry.addWorker(employee2);
             registry.addWorker(employee3);
             registry.printList();
+            System.out.println("Trying to push the same worker at list twice:");
             registry.addWorker(employee3);  // ERROR!
 
         } catch (EmployeeInRegistryException exp) {
